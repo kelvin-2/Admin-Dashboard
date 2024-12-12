@@ -1,0 +1,36 @@
+/* Overall container for the layout */
+.container {
+    display: flex; /* Arrange left and right sections horizontally */
+    height: 100vh; /* Full viewport height */
+}
+
+/* Left Section */
+.left_section {
+    width: 40%; /* 40% of the container width */
+    background-color: pink; /* Placeholder background */
+}
+
+/* Right Section */
+.right_section {
+    flex-grow: 1; /* Take up the remaining space */
+    display: flex; /* Arrange child elements vertically */
+    flex-direction: column;
+}
+
+/* Navigation Bar */
+.nav_bar {
+    height: 15%; /* Take up 15% of the right section height */
+    background-color: lightblue; /* Placeholder background */
+}
+
+/* Content Area */
+.content_area {
+    flex-grow: 1; /* Take up most of the remaining height */
+    background-color: white; /* Placeholder background */
+}
+
+/* Announcements Section */
+.announcements {
+    height: 20%; /* Take up 20% of the right section height */
+    background-color: lightgray; /* Placeholder background */
+}
