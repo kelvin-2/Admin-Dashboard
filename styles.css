@@ -1,4 +1,4 @@
-/* Overall container for the layout */
+/* Container Layout */
 .container {
     display: flex; /* Arrange left and right sections horizontally */
     height: 100vh; /* Full viewport height */
@@ -21,6 +21,102 @@
 .nav_bar {
     height: 15%; /* Take up 15% of the right section height */
     background-color: lightblue; /* Placeholder background */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Top Section of Nav Bar */
+.top {
+    background-color: lightgoldenrodyellow;
+    height: 60%; /* 60% of the navbar height */
+    display: flex;
+    align-items: center; /* Align items vertically */
+    gap: 10px; /* Add space between the icon and the button */
+    padding: 10px;
+}
+
+/* Profile Section */
+.profile_info {
+    display: flex;
+    align-items: center; /* Align the profile picture and name horizontally */
+    gap: 10px; /* Add space between the image and name */
+}
+
+.profile_pic img {
+    height: 60px;
+    border-radius: 20%;
+}
+
+.name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Search Icon */
+.image img {
+    height: 30px; /* Set a fixed height for the image */
+    width: auto; /* Maintain aspect ratio */
+}
+
+/* Search Button */
+.search_btn {
+    height: 30px; /* Match the height of the image */
+    width: 70%; /* Set a suitable width for the button */
+    border: none;
+    border-radius: 20px;
+    background-color: #f0f0f0; /* Light gray background for the button */
+    display: flex;
+    align-items: center; /* Center content inside the button */
+    justify-content: center;
+    cursor: pointer; /* Pointer cursor for button */
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.search_btn:hover {
+    background-color: #ddd; /* Darker gray on hover */
+}
+
+/* Bottom Section of Nav Bar */
+.bottom {
+    background-color: chartreuse;
+    display: flex;
+    height: 40%; /* Take up 40% of the navbar height */
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Space between profile and events */
+    gap: 20px; /* Space between profile and events */
+    padding: 10px;
+}
+
+.profile {
+    font-size: 18px; /* Profile name styling */
+    font-weight: bold;
+    color: #333;
+}
+
+.events {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+}
+
+.new {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.new:hover {
+    background-color: #45a049;
+}
+
+/* Notification Icon */
+.notification_icon img {
+    height: 30px;
+    margin-left: 20px;
 }
 
 /* Content Area */
