@@ -3,10 +3,13 @@
     display: flex; /* Arrange left and right sections horizontally */
     height: 100vh; /* Full viewport height */
 }
+body{
+    background-color: rgb(168, 175, 182);
+}
 
 /* Left Section */
 .left_section {
-    width: 40%; /* 40% of the container width */
+    width: 30%; /* 40% of the container width */
     background-color: pink; /* Placeholder background */
 }
 
@@ -19,27 +22,39 @@
 
 /* Navigation Bar */
 .nav_bar {
-    height: 15%; /* Take up 15% of the right section height */
-    background-color: lightblue; /* Placeholder background */
+    height: 25%; /* Take up 25% of the right section height */
+    background-color: #ffffff; /* Dark gray placeholder background */
     display: flex;
     flex-direction: column;
+    box-shadow: 0px 4px 6px 0px rgba(111, 108, 108, 0.5); /* Red shadow with offsets and opacity */
 }
 
+.wrapper {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    gap: 10px;
+    margin-left: 70px;
+}
 /* Top Section of Nav Bar */
 .top {
-    background-color: lightgoldenrodyellow;
-    height: 60%; /* 60% of the navbar height */
+    height: 70%; /* 60% of the navbar height */
     display: flex;
     align-items: center; /* Align items vertically */
     gap: 10px; /* Add space between the icon and the button */
     padding: 10px;
+    margin-left:60px;
 }
-
+h1,h2{
+    margin: 0;
+    font-size: 20px;
+}
 /* Profile Section */
 .profile_info {
     display: flex;
     align-items: center; /* Align the profile picture and name horizontally */
     gap: 10px; /* Add space between the image and name */
+    margin-left: 30px;
+    margin-right:30px;
 }
 
 .profile_pic img {
@@ -48,9 +63,9 @@
 }
 
 .name {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
-    color: #333;
+    margin-right: 100px;
 }
 
 /* Search Icon */
@@ -62,10 +77,10 @@
 /* Search Button */
 .search_btn {
     height: 30px; /* Match the height of the image */
-    width: 70%; /* Set a suitable width for the button */
+    width: 40%; /* Set a suitable width for the button */
     border: none;
     border-radius: 20px;
-    background-color: #f0f0f0; /* Light gray background for the button */
+    background-color: #f0f0f0; /* Ligsht gray background for the button */
     display: flex;
     align-items: center; /* Center content inside the button */
     justify-content: center;
@@ -80,33 +95,30 @@
 
 /* Bottom Section of Nav Bar */
 .bottom {
-    background-color: chartreuse;
+    flex-grow: 1; /* Allow the bottom section to grow and occupy remaining space */
     display: flex;
-    height: 40%; /* Take up 40% of the navbar height */
-    align-items: center; /* Align items vertically */
-    justify-content: space-between; /* Space between profile and events */
-    gap: 20px; /* Space between profile and events */
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
     padding: 10px;
+    margin:0;
 }
 
-.profile {
-    font-size: 18px; /* Profile name styling */
-    font-weight: bold;
-    color: #333;
-}
 
 .events {
     display: flex;
-    gap: 10px; /* Space between buttons */
+    gap: 40px; /* Space between buttons */
+    margin-right: 150px;
 }
 
-.new {
+button{
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: #1D9BF0;
     color: white;
     cursor: pointer;
+    align-items: center;
 }
 
 .new:hover {
