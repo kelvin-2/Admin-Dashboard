@@ -9,8 +9,45 @@ body{
 
 /* Left Section */
 .left_section {
-    width: 30%; /* 40% of the container width */
-    background-color: pink; /* Placeholder background */
+    background-color: #0077b6;
+    color: #fff;
+    padding: 20px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+
+.dashboard {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.menu_items {
+    list-style-type: none;
+    margin: 0;
+}
+
+.menu_items li {
+    display: flex;
+    margin-left: 0;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.menu_items li img {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+
+.menu_items li span {
+    font-size: 18px;
+}
+
+/* Additional space after 'Communities' */
+.menu_items li:nth-child(6) {
+    margin-bottom: 80px;
 }
 
 /* Right Section */
