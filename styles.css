@@ -142,7 +142,13 @@ h1,h2{
     padding: 10px;
     margin:0;
 }
-
+.title{
+  width:100%;
+  margin: 0; /* Remove unnecessary margins */
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.5rem 0; /* Add slight spacing */
+}
 
 .events {
     display: flex;
@@ -171,17 +177,31 @@ button{
 }
 
 /* Content Area */
+/* Main content area container */
+.main_content_area {
+  display: grid; /* Use grid to align content and announcements */
+  grid-template-columns: 2fr 1fr; /* Content takes 2 parts, announcements take 1 part */
+  gap: 2rem; /* Add spacing between columns */
+  padding: 2rem; /* Add padding */
+  margin-top: 1rem; /* Adjust spacing below the navbar */
+}
+
+/* Content area */
 .content_area {
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .content_cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-  }
+  margin: 0; /* Remove default margin */
+  display: flex; /* Grid will handle layout, so this can stay as flex */
+  flex-direction: column;
+}
+
+/* Content cards */
+.content_cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+
+
   
   .card {
     background-color: #fff;
@@ -209,56 +229,3 @@ button{
     margin-right: 0.5rem;
   }
   
-  .announcements {
-    margin-top: 2rem;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    padding: 1.5rem;
-  }
-  
-  .announcement {
-    border-bottom: 1px solid #e0e0e0;
-    padding-bottom: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  .announcement:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
-  }
-  
-  .announcement h3 {
-    margin-top: 0;
-  }
-  
-  .trending {
-    margin-top: 2rem;
-  }
-  
-  .trending_items {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .trending_item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
-  }
-  
-  .trending_item img {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    margin-right: 1rem;
-  }
-  
-  .trending_item .trending_info h4 {
-    margin: 0;
-  }
-  
-  .trending_item .trending_info p {
-    margin: 0;
-    color: #757575;
-  }
